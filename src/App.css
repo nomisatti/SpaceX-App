@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+    flex-direction: row;
+    font-family: cursive;
 }
 
 .App-logo {
@@ -35,4 +38,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+ /* margin-left: -15rem; */
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+.list-group-item:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+.LaunchInfo_property{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: fantasy;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px ){
+  .col-md-8 {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cex {background: green;}
+}
+.spinner-grow {
+  margin-top:20%;
 }
