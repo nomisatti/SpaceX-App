@@ -80,7 +80,6 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
                 <hr />
 
                 <h2> Launch Gallery </h2>
-                {console.log("data.launch.links.flickr_images : " , data.launch.links.flickr_images)}
                 {data.launch.links.flickr_images.length > 0 ? (
                     <Carousel activeIndex={index} onSelect={handleSelect}>
                         {data.launch.links.flickr_images.map((image, i) => (

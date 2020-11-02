@@ -18,7 +18,7 @@ function App() {
       <Container fluid>
         <Row>
           <Col xs={12} md={3}><Launch handleIdChange={handleIdChange} /></Col>
-          <Col xs={12} md={8}>      <LaunchDetails launch={launch} /></Col>
+          <Col xs={12} md={8}><LaunchDetails launch={launch} /></Col>
          
         </Row>
        

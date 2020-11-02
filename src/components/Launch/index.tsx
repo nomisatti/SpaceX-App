@@ -3,7 +3,7 @@ import {useLaunchesQuery} from '../../generated/graphql'
 import Launch , {handleChnageProps} from './Launch'
 
 const LaunchContainer = (props:handleChnageProps) => {
-    const {data , loading , error } =  useLaunchesQuery()
+    const {data , loading , error } =  useLaunchesQuery({})
 
     if(loading) {
         return <div> Loading ..</div>
